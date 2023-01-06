@@ -1,22 +1,22 @@
 package state;
 
 public class StatefulObject {
+    protected State concreteStateA;
+    protected State concreteStateB;
+    protected State currentState;
 
-    private State state;
+    public StatefulObject() {
+        concreteStateA = new ConcreteStateA(this);
+        concreteStateB = new ConcreteStateB(this);
 
-    public StatefulObject(State initialState) {
-        setState(initialState);
-    }
-
-    public void setState(State state) {
-        this.state = state;
+        this.currentState = concreteStateA;
     }
 
     public void handleSituationOne() {
-        state.handleActionOne();
+        currentState.handleActionOne();
     }
 
     public void handleSituationTwo() {
-        state.handleActionTwo();
+        currentState.handleActionTwo();
     }
 }

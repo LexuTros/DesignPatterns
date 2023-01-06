@@ -3,15 +3,12 @@ package state;
 public class StateMain {
     public static void main(String[] args) {
 
-        State stateA = new ConcreteStateA();
-        State stateB = new ConcreteStateB();
-
-        StatefulObject aStatefulObject = new StatefulObject(stateA);
+        StatefulObject aStatefulObject = new StatefulObject();
 
         aStatefulObject.handleSituationOne();
-
-        aStatefulObject.setState(stateB);
+        aStatefulObject.handleSituationOne();
 
         aStatefulObject.handleSituationTwo();
+
     }
 }
