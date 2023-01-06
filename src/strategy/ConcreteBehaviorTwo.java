@@ -1,10 +1,10 @@
 package strategy;
 
-public class ConcreteBehaviorTwo implements VariableBehaviorInterface {
+public class ConcreteBehaviorTwo implements BehaviorInterface {
 
     @Override
     public void execute() {
-        System.out.println("concrete behavior number two got executed!");
+        System.out.println("behavior number two got executed!");
     }
 
 }

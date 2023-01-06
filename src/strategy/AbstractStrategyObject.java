@@ -1,10 +1,10 @@
 package strategy;
 
 public abstract class AbstractStrategyObject {
-    private VariableBehaviorInterface variableBehavior;
+    private BehaviorInterface variableBehavior;
      //possibly more variables
 
-    public void setBehavior(VariableBehaviorInterface concreteBehavior) {
+    public void setBehavior(BehaviorInterface concreteBehavior) {
         this.variableBehavior = concreteBehavior;
     }
 

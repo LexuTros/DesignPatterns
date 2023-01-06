@@ -5,9 +5,9 @@ public class StrategyMain {
 
         ConcreteBehaviorTwo two = new ConcreteBehaviorTwo();
 
-        ConcreteStrategyObject object = new ConcreteStrategyObject();
+        StrategyObject object = new StrategyObject();
 
-        object.concreteObjectMethod();
+        object.someMethod();
 
         object.setBehavior(two);
         System.out.println("behavior was reassigned");
