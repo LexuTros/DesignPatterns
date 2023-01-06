@@ -1,11 +1,12 @@
 package strategy;
 
 public abstract class AbstractStrategyObject {
-    private BehaviorInterface variableBehavior;
+    protected BehaviorInterface variableBehavior;
      //possibly more variables
 
     public void setBehavior(BehaviorInterface concreteBehavior) {
         this.variableBehavior = concreteBehavior;
+        System.out.println("behavior was reassigned");
     }
 
     public void executeBehavior() {

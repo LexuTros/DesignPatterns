@@ -4,7 +4,7 @@ public class StrategyObject extends AbstractStrategyObject {
 
     // definition of initial variable behavior
     public StrategyObject(){
-        this.setBehavior(new ConcreteBehaviorOne());
+        this.variableBehavior = new ConcreteBehaviorOne();
     }
 
     // object specific methods
