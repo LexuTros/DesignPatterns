@@ -6,12 +6,13 @@ public class Invoker {
     private Command undoCommand;
 
 
-    // error prone indexing!! (no checks what so ever)
     public void setNewCommand(int slot, Command newCommand) {
+        // if slot index is valid:
         commandSlots[slot] = newCommand;
     }
 
     public void executeCommand(int commandNumber) {
+        // if commandNumber is valid:
         commandSlots[commandNumber].execute();
         undoCommand = commandSlots[commandNumber];
     }
