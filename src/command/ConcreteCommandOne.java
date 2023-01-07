@@ -1,7 +1,6 @@
 package command;
 
 public class ConcreteCommandOne implements Command{
-
     @Override
     public void execute() {
         System.out.println("executes Command one, which might delegate some actions!");
