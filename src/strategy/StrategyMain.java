@@ -6,7 +6,7 @@ public class StrategyMain {
         StrategyObject object = new StrategyObject();
         ConcreteBehaviorTwo two = new ConcreteBehaviorTwo();
 
-        object.someMethod();
+        object.executeBehavior();
 
         object.setBehavior(two);
 

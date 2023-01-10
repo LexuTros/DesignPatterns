@@ -1,17 +1,18 @@
 package strategy;
 
-public class StrategyObject extends AbstractStrategyObject {
+public class StrategyObject {
+    private BehaviorInterface variableBehavior;
 
-    // definition of initial variable behavior
     public StrategyObject(){
         this.variableBehavior = new ConcreteBehaviorOne();
     }
 
-    // object specific methods
-    public void someMethod() {
-        System.out.println("the concreteObjectMethod got executed, which now calls the set variable behavior:");
-        executeBehavior();
-        System.out.println("and after that the method ends");
-
+    public void setBehavior(BehaviorInterface concreteBehavior) {
+        this.variableBehavior = concreteBehavior;
     }
+
+    public void executeBehavior() {
+        this.variableBehavior.execute();
+    }
+
 }
