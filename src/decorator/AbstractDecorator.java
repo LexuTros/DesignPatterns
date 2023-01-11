@@ -16,5 +16,4 @@ public abstract class AbstractDecorator implements Component {
         System.out.println(" and also some additional standard decorator operations");
     }
 
-    // leave the ones that should always be implemented in the concrete Decorators
 }

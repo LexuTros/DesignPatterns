@@ -7,7 +7,7 @@ public class ConcreteDecoratorB extends AbstractDecorator{
     }
 
 
-    // uses standard decorator method of operation()
+    // uses standard operation() method of AbstractDecorator
 
     @Override
     public String getDescription() {
